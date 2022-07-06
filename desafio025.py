@@ -1,0 +1,6 @@
+nome = input('Digite seu nome completo: ')
+lista = nome.upper().split()
+title = nome.title()
+print('Nome Digitado: {}'.format(title))
+print('Tem SILVA no nome ? ')
+print('SILVA' in lista)

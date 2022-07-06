@@ -1,0 +1,6 @@
+nome = input('Digite seu nome completo: ')
+lista = nome.title().split()
+tamanho = len(lista)
+print(nome.title())
+print('Primeiro nome: {}'.format(lista[0]))
+print('Último nome: {}'.format(lista[tamanho - 1]))
