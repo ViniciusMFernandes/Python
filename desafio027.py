@@ -1,5 +1,5 @@
-nome = input('Digite seu nome completo: ')
-lista = nome.title().split()
+nome = str(input('Digite seu nome completo: ')).title().strip()
+lista = nome.split()
 tamanho = len(lista)
 print(nome.title())
 print('Primeiro nome: {}'.format(lista[0]))

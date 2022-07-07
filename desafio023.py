@@ -1,6 +1,12 @@
-n = input('Digite um número entra 0 e 9999: ')
+n = int(input('Digite um número entra 0 e 9999: '))
+u = n // 1 % 10
+d = n // 10 % 10
+c = n // 100 % 10
+m = n // 1000 % 10
 
-print('UNIDADE: ', n.strip()[3:4])
-print('DEZENA: ', n.strip()[2:3])
-print('CENTENA:', n.strip()[1:2])
-print('MILHAR: ', n.strip()[:1])
+print('Unidade: {}'.format(u))
+print('Dezena: {}'.format(d))
+print('Centena: {}'.format(c))
+print('Milhar: {}'.format(m))
+
+
