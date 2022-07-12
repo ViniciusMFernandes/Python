@@ -1,4 +1,5 @@
-salario = float(input('Digite seu salário atual R$'))
+cores = {'vermelho': '\033[31m'}
+salario = float(input('{}Digite seu salário atual R$'.format(cores['vermelho'])))
 if salario <= 1250:
     print('Salário atual: R${:.2f}\nCom aumento de 15% R${:.2f}'.format(salario, salario + (salario * 0.15)))
 else:
