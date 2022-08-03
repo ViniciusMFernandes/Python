@@ -8,20 +8,20 @@ while decimo != 0:
     primeirotermo += razao
     decimo -= 1
     while decimo == 0:
+        if continuar == 0:
+            break
         print('ACABOU!')
-        while continuar != 0:
+        while decimo == 0:
             print('\n [ 0 ] SAIR')
             print(' [ 1 ] MOSTRAR MAIS TERMOS')
             continuar = int(input('\n ESCOLHA UMA OPÇÃO:'))
             if continuar == 0:
                 break
-            if continuar == 1:
-                while decimo == 0:
-                    decimo = int(input('Quantidade de termos: '))
-                    print('{}'.format(primeirotermo), end=' -> ')
-                    primeirotermo += razao
-                    decimo -= 1
-print('FIM')
+            decimo = int(input('Quantidade de termos: '))
+            print('{}'.format(primeirotermo), end=' -> ')
+            primeirotermo += razao
+            decimo -= 1
+print('\nFIM')
 
 
 
