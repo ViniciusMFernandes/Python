@@ -4,10 +4,11 @@ i = 1
 sair = 2
 while sair != 0:
     n = int(input('Insira o {}º número: '.format(i)))
-    maior = n
-    if menor > maior:
+    if menor == 0:
+        menor = n
+    if n > maior:
         maior = n
-    elif maior < menor:
+    elif n < menor:
         menor = n
     i += 1
     soma += n

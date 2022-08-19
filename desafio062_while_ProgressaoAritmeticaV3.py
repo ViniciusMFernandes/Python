@@ -14,13 +14,16 @@ while decimo != 0:
         while decimo == 0:
             print('\n [ 0 ] SAIR')
             print(' [ 1 ] MOSTRAR MAIS TERMOS')
-            continuar = int(input('\n ESCOLHA UMA OPÇÃO:'))
+            continuar = int(input('\n ESCOLHA UMA OPÇÃO: '))
             if continuar == 0:
                 break
-            decimo = int(input('Quantidade de termos: '))
-            print('{}'.format(primeirotermo), end=' -> ')
-            primeirotermo += razao
-            decimo -= 1
+            elif continuar == 1:
+                decimo = int(input('Quantidade de termos: '))
+                print('{}'.format(primeirotermo), end=' -> ')
+                primeirotermo += razao
+                decimo -= 1
+            else:
+                print('Opção Inválida!')
 print('\nFIM')
 
 

@@ -1,6 +1,5 @@
-opcao = n1 = n2 = 0
+opcao = 0
 sair = ''
-voltar = 'S'
 n1 = int(input('DIGITE 1º NÚMERO: '))
 n2 = int(input('DIGITE 2º NÚMERO: '))
 while opcao != 5:
@@ -12,13 +11,13 @@ while opcao != 5:
     print('[ 5 ] SAIR')
     print('-' * 35)
     opcao = int(input('ESCOLHA UMA OPÇÃO: '))
+    if opcao > 5:
+        print('Opção Inválida. Tente novamente!')
     if opcao == 1:
-        soma = 0
         soma = n1 + n2
         print('\n\033[30;46m [ 1 ] SOMAR \033[m')
         print('{} + {} = {}'.format(n1, n2, soma))
     if opcao == 2:
-        mult = 0
         mult = n1 * n2
         print('\n\033[30;46m [ 2 ] MULTIPLICAR \033[m')
         print('{} x {} = {}'.format(n1, n2, mult))
