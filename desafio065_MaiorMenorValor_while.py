@@ -16,6 +16,8 @@ while sair != 0:
     print('\n[ 0 ] SAIR\n[ 1 ] CONTINUAR')
     sair = int(input('Deseja Continuar ? '))
     media = soma / u
+print('\n\033[30;44m FIM \033[m')
+print('Quantidade de números digitados: {}'.format(u))
 print('Menor número digitado: {}'.format(menor))
 print('Maior número digitado: {}'.format(maior))
 print('Média números digitados: {:.2}'.format(media))
