@@ -1,6 +1,6 @@
 print('\033[30;45m ESTATISTICAS DE PRODUTOS \033[m')
 print('-'*20)
-print('LOJA')
+print('{:^20}'.format('LOJA'))
 print('-'*20)
 menorpreco = total = maiormil = 0
 menornome = ''
@@ -8,9 +8,7 @@ while True:
     continuar = 'T'
     produto = str(input('Nome do Produto: ')).title()
     preco = float(input('R$'))
-    if menorpreco == 0:
-        menorpreco = preco
-    if preco <= menorpreco:
+    if menorpreco == 0 or preco <= menorpreco:
         menorpreco = preco
         menornome = produto
     if preco > 1000:

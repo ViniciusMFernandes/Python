@@ -20,7 +20,6 @@ while True:
         continuar = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
     if continuar == 'N':
         break
-
-print(f'Pessoas com mais de 18 anos: {i}')
+print(f'\nPessoas com mais de 18 anos: {i}')
 print(f'Homens cadastrados: {masculino}')
 print(f'Mulheres com menos de 20 anos: {feminino}')

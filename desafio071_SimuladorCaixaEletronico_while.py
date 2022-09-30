@@ -1,5 +1,7 @@
 print('\033[30;47m SIMULADOR CAIXA ELETRÔNICO \033[m')
-print('='*10, 'Simulador Banco', '='*10)
+print('-'*30)
+print('{:^30}'.format('Simulador Banco'))
+print('-'*30)
 valor = int(input('Qual valor você quer sacar? R$'))
 nota50 = 50
 nota20 = 20
@@ -23,3 +25,5 @@ print('Notas de 50: {}'.format(resultado50))
 print(f'Notas de 20: {resultado20}')
 print(f'Notas de 10: {resultado10}')
 print(f'Notas de 1: {resultado1}')
+print('-'*30)
+print('Volte Sempre ao nosso Banco')
